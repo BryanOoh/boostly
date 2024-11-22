@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/theme-provider" // Ensure the path is correct and the module exists
+// Check if the ThemeProvider module exists and is correctly exported
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -25,4 +26,3 @@ export default function RootLayout({
     </html>
   )
 }
-

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'
 import { GlassCard, GlassCardContent, GlassCardHeader, GlassCardTitle } from "@/components/ui/glass-card"
-import { DateTimeLocation } from './date-time-location'
+// import { DateTimeLocation } from './date-time-location'
 type Todo = {
   id: number
   text: string
@@ -12,7 +12,6 @@ type Todo = {
 }
 
 export function DailyProgress() {
-  const [todos, setTodos] = useState<Todo[]>([])
   const [completedTasks, setCompletedTasks] = useState(0)
   const [totalTasks, setTotalTasks] = useState(0)
 
@@ -20,7 +19,6 @@ export function DailyProgress() {
     const storedTodos = localStorage.getItem('todos')
     if (storedTodos) {
       const parsedTodos = JSON.parse(storedTodos)
-      setTodos(parsedTodos)
       setTotalTasks(parsedTodos.length)
       setCompletedTasks(parsedTodos.filter((todo: Todo) => todo.completed).length)
     }
@@ -31,9 +29,10 @@ export function DailyProgress() {
       const storedTodos = localStorage.getItem('todos')
       if (storedTodos) {
         const parsedTodos = JSON.parse(storedTodos)
-        setTodos(parsedTodos)
         setTotalTasks(parsedTodos.length)
         setCompletedTasks(parsedTodos.filter((todo: Todo) => todo.completed).length)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+
       }
     }
 
@@ -52,7 +51,7 @@ export function DailyProgress() {
         <div className="flex items-center justify-between">
           <div className="space-y-">
           <div className="text-sm text-white dark:text-gray-300">
-            <DateTimeLocation />
+            {/* <DateTimeLocation /> */}
           </div>
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/20 text-white">
               <span className="font-medium">
@@ -82,4 +81,3 @@ export function DailyProgress() {
     </GlassCard>
   )
 }
-
