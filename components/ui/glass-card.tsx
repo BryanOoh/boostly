@@ -10,7 +10,7 @@ const GlassCard = React.forwardRef<
     className={cn(
       "rounded-lg border p-4 shadow-sm",
       "backdrop-filter backdrop-blur-[40px] backdrop-saturate-[180%]",
-      "bg-[rgba(216,213,231,0.41)] border-[rgba(255,255,255,0.3)]",
+      "bg-[rgba(216,213,231,0.14)] border-[rgba(255,255,255,0.3)]",
       "dark:backdrop-filter dark:backdrop-blur-[40px] dark:backdrop-saturate-[180%]",
       "dark:bg-[rgba(22,23,27,0.78)] dark:border-white/[0.125]",
       className

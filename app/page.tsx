@@ -4,7 +4,6 @@ import { DailyProgress } from './components/daily-progress'
 // import { DateTimeLocation } from './components/date-time-location'
 import { CountdownTo2025 } from './components/countdown-to-2025'
 import { ThemeToggle } from '@/components/theme-toggle'
-// import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
