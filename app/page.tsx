@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="absolute bottom-35 left-0 right-0 text-center p-4 text-sm text-gray-400 dark:text-gray-400">
+      <footer className="absolute bottom-35 left-0 right-0 text-center p-4 text-sm text-gray-400 dark:text-gray-400 bg-black">
         Created by{' '}
         <Link 
           href="https://www.linkedin.com/in/bryan-oh-15784116b/" 
@@ -58,4 +58,3 @@ export default function Home() {
     </div>
   )
 }
-
